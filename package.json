@@ -1,5 +1,5 @@
 {
-  "name": "contensis-entry-picker-storybook-addon",
+  "name": "@zengenti/contensis-entry-picker-storybook-addon",
   "version": "1.0.0",
   "description": "Our Contensis entry picker for Storybook allows you to see your custom Storybook components working with real data coming from entries within your CMS.",
   "main": "dist/preset.js",
@@ -29,7 +29,6 @@
     "data"
   ],
   "license": "ISC",
-  "dependencies": {},
   "devDependencies": {
     "@babel/cli": "^7.16.0",
     "@babel/core": "^7.16.0",
@@ -49,5 +48,14 @@
     "contensis-delivery-api": "^1.1.8",
     "react": "^17.0.2",
     "react-dom": "^17.0.2"
-  }
+  },
+  "types": "./dist/preset.d.ts",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/contensis/contensis-entry-picker-storybook-addon.git"
+  },
+  "bugs": {
+    "url": "https://github.com/contensis/contensis-entry-picker-storybook-addon/issues"
+  },
+  "homepage": "https://github.com/contensis/contensis-entry-picker-storybook-addon#readme"
 }
