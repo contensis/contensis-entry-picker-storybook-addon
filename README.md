@@ -65,4 +65,4 @@ Template.args =  {
 }
 ```
 
-Now we are all set up, we can now go ahead and run storybook with `yarn storybook`. When this opens in the browser go over to the `Contensis entry picker` tab. Here you will see a drop down with entries to choose from. Clicking one of these will allow your component to consume its data. 🎉
+Now we are all set up, we can now go ahead and run storybook with `npm run storybook` or `yarn storybook`. When this opens in the browser go over to the `Contensis entry picker` tab. Here you will see a drop down with entries to choose from. Clicking one of these will allow your component to consume its data. 🎉
