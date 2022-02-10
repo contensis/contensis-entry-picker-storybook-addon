@@ -7,6 +7,7 @@ import { Entry } from 'contensis-delivery-api/lib/models';
 import { getEntryById } from '../client/index';
 
 export const useGetEntryByEntryId = (entryId:string, linkDepth?:number) => {
+  if (!entryId) return null;
   const [entry, setEntry] = useState<Entry>();
   
   useEffect(() => {
