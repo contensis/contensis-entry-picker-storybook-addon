@@ -1,0 +1,79 @@
+
+.entry-picker__container {
+  padding: 16px;
+}
+.form-field {
+  margin-bottom: 16px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+.error {
+  max-width: 400px;
+  width: 100%;
+  background-color: #f9d7d766;
+  display: flex;
+  align-items: center;
+  border-radius: 8px;
+  padding: 8px;
+  margin: 16px 0;
+}
+.error img {
+  width: 32px;
+  height: 32px;
+  margin: 0 8px 0 0
+}
+.required {
+  position: relative;
+}
+.required:before {
+  content: '*';
+  position: absolute;
+  top: -2px;
+  right: -4px;
+  width: 4px;
+  height: 100%;
+  color: #CA2121;
+  font-size: 12px;
+  font-weight: 500;
+}
+label {
+  display: block;
+  margin: 0 0 16px;
+}
+select, input {
+  width: 100%;
+  max-width: 400px;
+  padding: 8px;
+  border: 1px solid #ddd;
+  border-radius: 2px;
+  font-size: 14px;
+  color: #333;
+  
+}
+
+select {
+  padding-right: 32px;
+  cursor: pointer;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+}
+
+select::-ms-expand {
+  display: none;
+}
+
+.select__container {
+  display: flex;
+  align-items: center;
+  position: relative;
+}
+
+.chevron-down {
+  width: 24px;
+  pointer-events: none;
+  height: 24px;
+  position: absolute;
+  top: auto;
+  right: 4px;
+}

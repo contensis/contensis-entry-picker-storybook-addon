@@ -1,0 +1,53 @@
+{
+  "name": "contensis-entry-picker-storybook-addon",
+  "version": "1.0.0",
+  "description": "Our Contensis entry picker for Storybook allows you to see your custom Storybook components working with real data coming from entries within your CMS.",
+  "main": "dist/preset.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "storybook": "yarn compile && start-storybook --no-manager-cache -s ./dist -p 6006",
+    "build-storybook": "build-storybook",
+    "build:js": "tsc",
+    "copy:css": "babel ./src/css --out-dir ./dist/src/css --copy-files",
+    "copy:assets": "babel ./src/assets --out-dir ./dist/src/assets --copy-files",
+    "compile": "yarn build:js && yarn copy:css && yarn copy:assets"
+  },
+  "author": "zengenti.com",
+  "storybook": {
+    "displayName": "Contensis entry picker",
+    "icon": "https://www.contensis.com/static/img/footer-logo.svg",
+    "supportedFrameworks": [
+      "React"
+    ]
+  },
+  "keywords": [
+    "storybook-addons",
+    "contensis",
+    "entries",
+    "components",
+    "cms",
+    "data"
+  ],
+  "license": "ISC",
+  "dependencies": {},
+  "devDependencies": {
+    "@babel/cli": "^7.16.0",
+    "@babel/core": "^7.16.0",
+    "@babel/plugin-proposal-optional-chaining": "^7.16.7",
+    "@babel/preset-env": "^7.16.0",
+    "@babel/preset-react": "^7.16.0",
+    "@storybook/addon-actions": "^6.3.10",
+    "@storybook/addon-essentials": "^6.3.10",
+    "@storybook/addon-links": "^6.3.10",
+    "@storybook/react": "^6.3.10",
+    "babel-loader": "^8.2.2",
+    "contensis-delivery-api": "^1.1.8",
+    "react": "^17.0.2",
+    "react-dom": "^17.0.2"
+  },
+  "peerDependencies": {
+    "contensis-delivery-api": "^1.1.8",
+    "react": "^17.0.2",
+    "react-dom": "^17.0.2"
+  }
+}
