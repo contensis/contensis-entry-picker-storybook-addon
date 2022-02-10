@@ -8,18 +8,18 @@ Our Contensis entry picker for Storybook allows you to see your custom Storybook
 
 You can add the Contensis entry picker addon to you project with:
 
-`npm install --save-dev contensis-entry-picker-storybook-addon`
+`npm install --save-dev @zengenti/contensis-entry-picker-storybook-addon`
 
 Or:
 
-`yarn add contensis-entry-picker-storybook-addon -D`
+`yarn add @zengenti/contensis-entry-picker-storybook-addon -D`
 
 Then add the following line into your `.storybook/main.js` file:  
 
 ``` javascript
 module.exports  =  {
  addons: [
- 'contensis-entry-picker-storybook-addon',
+ '@zengenti/contensis-entry-picker-storybook-addon',
 ],
 ```
 
@@ -41,10 +41,10 @@ args:  Props,
 Once we have this, we can use a custom hook to get the entry from this `entryId`. We can do this like so:
 
 It's important to spread the object so that the component can consume all the props.
-**Remember to import `useGetEntryByEntryId` from the `contensis-entry-picker-storybook-addon`**
+**Remember to import `useGetEntryByEntryId` from the `@zengenti/contensis-entry-picker-storybook-addon`**
 
 ``` javascript
-import  { useGetEntryByEntryId }  from  'contensis-entry-picker-storybook-addon';
+import  { useGetEntryByEntryId }  from  '@zengenti/contensis-entry-picker-storybook-addon';
 
 export  const  Template:  ComponentStory<typeof Example>  = (
 args:  Props,
