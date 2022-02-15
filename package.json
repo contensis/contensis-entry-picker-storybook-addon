@@ -15,7 +15,7 @@
   "author": "zengenti.com",
   "storybook": {
     "displayName": "Contensis entry picker",
-    "icon": "https://www.contensis.com/static/img/footer-logo.svg",
+    "icon": "./src/assets/contensis.svg",
     "supportedFrameworks": [
       "React"
     ]
