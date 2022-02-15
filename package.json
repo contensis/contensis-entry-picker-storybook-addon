@@ -1,6 +1,6 @@
 {
   "name": "@zengenti/contensis-entry-picker-storybook-addon",
-  "version": "1.0.3",
+  "version": "1.0.4",
   "description": "Our Contensis entry picker for Storybook allows you to see your custom Storybook components working with real data coming from entries within your CMS.",
   "main": "dist/preset.js",
   "scripts": {
